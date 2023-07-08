@@ -16,9 +16,9 @@ limitations under the License.
 'use strict'
 
 const DEMO_SOURCE_CODE =
-    'https://github.com/GoogleCloudPlatform/document-ai-samples/' +
+    'https://github.com/Binary42420/powur/' +
     'tree/main/' +
-    'web-app-pix2info-python'
+    'powur'
 
 // Adapt as needed
 const DIMENSION_CONSTRAINT = {
