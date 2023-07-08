@@ -81,7 +81,7 @@ const gData = {
 }
 
 // User parameters (serialized in Local Storage)
-const LOCAL_STORAGE_KEY = 'docaiPixToInfo'
+const LOCAL_STORAGE_KEY = 'powur'
 const gParams = {
     apiLocation: null,
     processorName: null, // Display name
@@ -640,7 +640,7 @@ function plugEvents() {
 
 function getTimedFilename(fileExtension) {
     const fileDate = new Date().toISOString().split('.')[0]
-    return `docaiPixToInfo_${fileDate}.${fileExtension}`
+    return `PowurDemo_${fileDate}.${fileExtension}`
 }
 
 function viewProjectSourceCode(event) {
@@ -829,10 +829,7 @@ async function initApp() {
     initSamples()
 }
 
-(async () => {
-    await customElements.whenDefined('sl-select')
-    const overlay = document.getElementById('overlay')
-    overlay.value = 'entities'
-})()
-
 initApp()
+
+
+
