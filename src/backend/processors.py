@@ -21,11 +21,6 @@ from google.cloud.documentai_v1 import Processor
 # Processing locations (displayed in the frontend)
 DEMO_PROCESSING_LOCATIONS = ("us", "eu")
 
-# Processing location used when analyzing a sample
-# Samples are json-cached, so this is only useful in dev mode (before deployment)
-# Choose according to your development location:
-# - A closer location will provide better latencies
-# - Different locations will provide identical results (except if regulations differ)
 SAMPLE_PROCESSING_LOCATION = "us"
 assert SAMPLE_PROCESSING_LOCATION in DEMO_PROCESSING_LOCATIONS
 
@@ -34,7 +29,6 @@ assert SAMPLE_PROCESSING_LOCATION in DEMO_PROCESSING_LOCATIONS
 DEMO_PROCESSOR_TYPES = (
     "UTILITY_PROCESSOR"
 )
-
 
 def encode_processor_info(processor: Processor) -> str:
     """Return an opaque string to store processor info in the frontend."""

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Document AI demo - From pixels to information</title>
+        <title>Powur AI Demo</title>
         <meta
             name="description"
-            content="Prototyping demo for document understanding with Google Cloud Document AI"
+            content="Prototyping demo"
         />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <!-- Web Components by Shoelace: https://shoelace.style -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
@@ -22,7 +21,7 @@
     </head>
 
     <body>
-        <h1>Document AI &mdash; From pixels to information</h1>
+        <h1>Powur AI Demo</h1>
         <sl-card>
             <div slot="header">Input</div>
             <sl-select hoist id="location" label="Location"></sl-select>
@@ -73,7 +72,7 @@
                         <sl-divider></sl-divider>
                         <sl-menu-label>Download</sl-menu-label>
                         <sl-menu-item id="download-docai-json"
-                            >Document AI JSON
+                            >Powur AI JSON
                             <sl-icon
                                 slot="prefix"
                                 name="file-earmark-arrow-down"
@@ -88,20 +87,16 @@
                         </sl-menu-item>
                         <sl-divider></sl-divider>
                         <sl-menu-label>Output options</sl-menu-label>
-                        <sl-menu-item value="animated" type="checkbox"
-                            >Animated
+                        <sl-menu-item value="animated" type="checkbox" checked>Animated
                             <sl-icon slot="prefix" name="film"></sl-icon>
                         </sl-menu-item>
-                        <sl-menu-item value="cropped" type="checkbox"
-                            >Cropped to text
+                        <sl-menu-item value="cropped" type="checkbox">Cropped to text
                             <sl-icon slot="prefix" name="crop"></sl-icon>
                         </sl-menu-item>
-                        <sl-menu-item value="confidence" type="checkbox"
-                            >Confidence
+                        <sl-menu-item value="confidence" type="checkbox" checked>Confidence
                             <sl-icon slot="prefix" name="percent"></sl-icon>
                         </sl-menu-item>
-                        <sl-menu-item value="normalized" type="checkbox" checked
-                            >Normalized values
+                        <sl-menu-item value="normalized" type="checkbox">Normalized values
                             <sl-icon slot="prefix" name="rulers"></sl-icon>
                         </sl-menu-item>
                         <sl-divider></sl-divider>
