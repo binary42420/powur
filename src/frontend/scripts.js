@@ -19,8 +19,8 @@ const DEMO_SOURCE_CODE =
 
 // Adapt as needed
 const DIMENSION_CONSTRAINT = {
-    min: 1080,
-    ideal: 2500, // Rough size at which a sheet of paper can be captured at 300 dpi
+    min: 720,
+    ideal: 2160, // Rough size at which a sheet of paper can be captured at 300 dpi
 }
 const CAPTURE_CONSTRAINTS = {
     width: DIMENSION_CONSTRAINT,
