@@ -221,6 +221,11 @@ function addOptions(formData) {
 
 
 
+async function onDialogClosing() {
+    stopVideo()
+
+    eCamera.loading = false
+}
 
 async function startVideo() {
     try {
@@ -600,6 +605,7 @@ function initOptionsMenu() {
 }
 
 function plugEvents() {
+    eCamera.onclick = cameraDialog
     eFiles.onclick = selectFiles
 
     eLocation.addEventListener('sl-change', onLocationChanged)
