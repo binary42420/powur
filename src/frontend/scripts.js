@@ -636,7 +636,7 @@ function plugEvents() {
 
 function getTimedFilename(fileExtension) {
     const fileDate = new Date().toISOString().split('.')[0]
-    return `docaiPixToInfo_${fileDate}.${fileExtension}`
+    return `POWURAI_${fileDate}.${fileExtension}`
 }
 
 function viewProjectSourceCode(event) {
