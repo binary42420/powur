@@ -14,22 +14,27 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 import functools
+import google.auth
+
 from io import BytesIO
 import logging
 from pathlib import Path
 
-from backend import docai
-from backend import processors
-from backend import render
-from backend import samples
 from flask import Flask
 from flask import jsonify
 from flask import request
 from flask import send_file
 from flask import send_from_directory
+
+
 from google.api_core.exceptions import BadRequest
 from google.api_core.exceptions import ClientError
-import google.auth
+
+from backend import samples
+from backend import processors
+from backend import render
+from backend import docai
+
 
 STATIC_FOLDER = "frontend"
 SAMPLES_ROOT = Path("./samples")
