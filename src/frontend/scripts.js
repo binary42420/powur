@@ -262,7 +262,6 @@ async function startVideo() {
 function stopVideo() {
     const stream = eVideo.srcObject
     if (!stream) {
-        console.warn(`## No stream`)
         return
     }
     stream.getTracks().forEach((track) => track.stop())
@@ -825,4 +824,4 @@ async function initApp() {
     initSamples()
 }
 
-initApp()
+initApp();
