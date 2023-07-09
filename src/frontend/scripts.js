@@ -617,7 +617,6 @@ function initOptionsMenu() {
 }
 
 function plugEvents() {
-    eCamera.onclick = cameraDialog
     eFiles.onclick = selectFiles
 
     eLocation.addEventListener('sl-change', onLocationChanged)
