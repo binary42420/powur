@@ -44,6 +44,7 @@ const SUPPORTED_TYPES = [
 
 const eLocation = document.getElementById('location')
 const eProcessor = document.getElementById('processor')
+const eCamera = document.getElementById('camera')
 const eFiles = document.getElementById('files')
 const eSamples = document.getElementById('samples')
 const eDialog = document.getElementById('dialog')
