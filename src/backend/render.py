@@ -27,7 +27,7 @@ from PIL import Image
 from PIL import ImageColor
 from PIL import ImageDraw
 from PIL import ImageFont
-import logging
+
 from .options import ImageFormat
 from .options import Options
 
@@ -732,7 +732,6 @@ def normalized_text_for_entity(entity: Entity) -> tuple[str, bool]:
 def default_text_for_entity(entity: Entity) -> tuple[str, bool]:
     """Return the entity default text and whether it's normalized."""
     if entity.mention_text:
-        logging.warning('Watch out!')
         return entity.mention_text.strip("\n"), False
 
     if entity.normalized_value.text:
