@@ -132,6 +132,12 @@ def process_sample(
 
     return document, json
 
+def print_entity_types(entities):
+  for entity in entities:
+    if entity.type == "Customer Name":
+      print(entity.value)
+
+print_entity_types(processed_entities)
 
 def summary_counts_for_document(document: Document) -> Mapping[str, Any]:
     """Return a document summary (for direct use by the frontend)."""
