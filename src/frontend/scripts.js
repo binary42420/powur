@@ -220,6 +220,17 @@ function addOptions(formData) {
 
 // Video/webcam
 
+async function cameraDialog() {
+    eCamera.loading = true
+
+    const videoOk = await startVideo()
+    if (!videoOk) {
+        eCamera.loading = false
+        return
+    }
+
+    eDialog.show()
+}
 
 
 async function onDialogClosing() {
