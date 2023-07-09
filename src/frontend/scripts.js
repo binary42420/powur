@@ -16,9 +16,13 @@ limitations under the License.
 'use strict'
 
 const DEMO_SOURCE_CODE =
+<<<<<<< HEAD
     'https://github.com/binary42420/powurai/' +
     'tree/main/' +
     'powurai'
+=======
+    'https://github.com/binary42420/powur'
+>>>>>>> 383aa77 (bh)
 
 // Adapt as needed
 const DIMENSION_CONSTRAINT = {
