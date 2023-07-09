@@ -32,7 +32,7 @@ assert SAMPLE_PROCESSING_LOCATION in DEMO_PROCESSING_LOCATIONS
 # Document AI processors used in this demo
 # See https://cloud.google.com/document-ai/docs/processors-list
 DEMO_PROCESSOR_TYPES = (
-    "UTILITY_PROCESSOR"
+    "UTILITY_PROCESSOR",
 )
 
 

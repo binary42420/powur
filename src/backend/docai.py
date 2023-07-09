@@ -273,3 +273,4 @@ def setup_processors(project_id: str):
                 client.create_processor(parent=parent, processor=processor)
             except Exception as err:
                 logging.exception(err)
+                
