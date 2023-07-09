@@ -44,7 +44,6 @@ const SUPPORTED_TYPES = [
 
 const eLocation = document.getElementById('location')
 const eProcessor = document.getElementById('processor')
-const eCamera = document.getElementById('camera')
 const eFiles = document.getElementById('files')
 const eSamples = document.getElementById('samples')
 const eDialog = document.getElementById('dialog')
@@ -220,23 +219,8 @@ function addOptions(formData) {
 
 // Video/webcam
 
-async function cameraDialog() {
-    eCamera.loading = true
 
-    const videoOk = await startVideo()
-    if (!videoOk) {
-        eCamera.loading = false
-        return
-    }
 
-    eDialog.show()
-}
-
-async function onDialogClosing() {
-    stopVideo()
-
-    eCamera.loading = false
-}
 
 async function startVideo() {
     try {
@@ -616,7 +600,6 @@ function initOptionsMenu() {
 }
 
 function plugEvents() {
-    eCamera.onclick = cameraDialog
     eFiles.onclick = selectFiles
 
     eLocation.addEventListener('sl-change', onLocationChanged)
