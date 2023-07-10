@@ -144,7 +144,7 @@ async function getLocations() {
 }
 
 async function getProcessors() {
-    const url = `/api/processors/${gParams.apiLocation}`
+    const url = `/api/processors/us`
     return jsonFromApi(url)
 }
 
@@ -824,9 +824,7 @@ async function initApp() {
     initElements()
     initLocation()
     initSamples()
-}
 
-(async () => {
     await customElements.whenDefined('sl-select');
     await customElements.whenDefined('sl-tab-panel');
     await customElements.whenDefined('sl-option');
@@ -837,8 +835,7 @@ async function initApp() {
     
     let overlay = document.getElementById('overlay');
 
-    overlay.value = 'blocks';
-})()
-
+    overlay.value = 'no-info';
+}
 
 initApp();

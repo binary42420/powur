@@ -29,6 +29,8 @@ from flask import send_file
 from flask import send_from_directory
 from google.api_core.exceptions import BadRequest
 from google.api_core.exceptions import ClientError
+from google.cloud.logging import Client
+
 import google.auth
 
 STATIC_FOLDER = "frontend"
@@ -62,7 +64,7 @@ def get_samples():
 
 @app.get("/api/processors/locations")
 def get_processors_locations():
-    processor_locations = processors.DEMO_PROCESSING_LOCATIONS
+    processor_locations = 'us'
 
     return jsonify(processor_locations)
 
@@ -161,8 +163,6 @@ def init_dev_env():
 
 
 def init_prod_env():
-    from google.cloud.logging import Client
-
     Client().setup_logging()
 
 
