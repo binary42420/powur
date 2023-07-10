@@ -91,7 +91,7 @@ CONFIDENCE_THRESHOLD = 0.1
 
 # Font options
 # DejaVuSansMono is installed by default on the App Engine runtime
-FONT_FAMILY_LINUX = "DejaVuSansMono-Bold.ttf"
+FONT_FAMILY_LINUX = "OpenSans-Bold.ttf"
 # Consolas is installed by default on Windows
 FONT_FAMILY_WIN = "consolab.ttf"
 FONT_FAMILY = FONT_FAMILY_WIN if os.name == "nt" else FONT_FAMILY_LINUX
@@ -657,6 +657,7 @@ def callout_info_for_entities(demo: Demo) -> Iterator[CalloutInfoBase]:
         text = f"{caption}: {entity_text}"
 
         yield vertices, text, confidence
+
 
 
 def confident_enough(confidence: float) -> bool:
