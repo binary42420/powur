@@ -563,7 +563,7 @@ function resetParams() {
 }
 
 function initParams() {
-    loadParams()
+   loadParams()
 }
 
 function initElements() {
@@ -572,7 +572,7 @@ function initElements() {
     initOverlayMenu()
     initOutputImage()
     initOptionsMenu()
-    plugEvents()
+ plugEvents()
 }
 
 function initPageMenu() {
@@ -823,5 +823,12 @@ async function initApp() {
     initLocation()
     initSamples()
 }
+
+(async () => {
+    await customElements.whenDefined('sl-select')
+    const overlay = document.getElementById('overlay')
+    overlay.value = 'entities';
+})()
+
 
 initApp();
