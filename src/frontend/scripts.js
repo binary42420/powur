@@ -826,8 +826,15 @@ async function initApp() {
 
 (async () => {
     await customElements.whenDefined('sl-select');
+    await customElements.whenDefined('sl-tab-panel');
+    await customElements.whenDefined('sl-option');
+    await customElements.whenDefined('sl-select');
+    await customElements.whenDefined('sl-tab');
+    await customElements.whenDefined('sl-menu-item');
+
     const overlay = document.getElementById('overlay');
-    overlay.value = 'entities';
+    overlay = overlay;
+    overlay.value = 'blocks';
 })()
 
 
