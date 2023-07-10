@@ -833,6 +833,10 @@ async function initApp() {
     await customElements.whenDefined('sl-menu-item');
 
     const overlay = document.getElementById('overlay');
+    const anim = document.getElementById('animate');
+    const conf = document.getElementById('confident');
+    conf    = conf;
+    anim    = anim;
     overlay = overlay;
     overlay.value = 'blocks';
 })()
