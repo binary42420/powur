@@ -828,16 +828,11 @@ async function initApp() {
     await customElements.whenDefined('sl-select');
     await customElements.whenDefined('sl-tab-panel');
     await customElements.whenDefined('sl-option');
-    await customElements.whenDefined('sl-select');
     await customElements.whenDefined('sl-tab');
     await customElements.whenDefined('sl-menu-item');
+    
+    let overlay = document.getElementById('overlay');
 
-    const overlay = document.getElementById('overlay');
-    const anim = document.getElementById('animate');
-    const conf = document.getElementById('confident');
-    conf    = conf;
-    anim    = anim;
-    overlay = overlay;
     overlay.value = 'blocks';
 })()
 
