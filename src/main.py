@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 import functools
-import google.auth
 
 from io import BytesIO
 import logging
@@ -26,6 +25,7 @@ from flask import request
 from flask import send_file
 from flask import send_from_directory
 
+import google.auth
 
 from google.api_core.exceptions import BadRequest
 from google.api_core.exceptions import ClientError

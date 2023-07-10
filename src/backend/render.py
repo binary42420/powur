@@ -680,7 +680,7 @@ def will_render_entity(
 
     if entity.properties:
         # Don't render parent properties (arbitrary choice to limit what's rendered)
-        return False, parent_page_ref
+        return render, parent_page_ref
 
     render = True
     if page_index is not None and entity.page_anchor.page_refs:
@@ -690,7 +690,7 @@ def will_render_entity(
                 parent_page_ref = page_ref
                 break  # Entity is visible on current page
         else:
-            render = False
+            render = True
 
     return render, parent_page_ref
 
