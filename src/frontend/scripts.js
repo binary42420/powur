@@ -830,7 +830,6 @@ async function initApp() {
     await customElements.whenDefined('sl-option');
     await customElements.whenDefined('sl-tab');
     await customElements.whenDefined('sl-menu-item');
-    await customElements.whenDefined('sl-icon');
 
     
     let overlay = document.getElementById('overlay');
