@@ -86,7 +86,7 @@ const gParams = {
 }
 
 const LAZY_LOAD_TREE = true // Memory consumption too high otherwise
-const MAX_TREE_ITEM_LEN = 70
+const MAX_TREE_ITEM_LEN = 50
 
 class Sample {
     constructor(processor, name, paths) {
