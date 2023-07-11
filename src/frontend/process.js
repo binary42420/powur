@@ -22,7 +22,7 @@ function main(name) {
    *  or
    *  `projects/steam-lock-391908/locations/us/processors/{processor}/processorVersions/{processorVersion}`
    */
-   const name = 'projects/steam-lock-391908/locations/us/processors/UTILITY_PROCESSOR'
+   const name = 'projects/steam-lock-391908/locations/us/processors/UTILITY_PARSER'
   /**
    *  Whether human review should be skipped for this request. Default to
    *  `false`.
