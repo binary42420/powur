@@ -29,7 +29,6 @@ from flask import send_file
 from flask import send_from_directory
 from google.api_core.exceptions import BadRequest
 from google.api_core.exceptions import ClientError
-from google.cloud.logging import Client
 
 import google.auth
 

@@ -2,7 +2,7 @@
 'use strict';
 
 function main(name) {
-[START documentai_v1_generated_DocumentProcessorService_ProcessDocument_async]
+//[START documentai_v1_generated_DocumentProcessorService_ProcessDocument_async]
 
 
   const inlineDocument = {}
