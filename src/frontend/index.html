@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>function hideLoader() {
-        $('#loading').hide();
-    }
-    
-    $(window).ready(hideLoader);
-    
-    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-    setTimeout(hideLoader, 20 * 1000);</script>
+
     <title>Powur-AI Demo</title>
     <meta name="description" content="Powur-AI-Demo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,36 +9,24 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace.js"></script>
-   <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/select/select.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/select/select.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/card/card.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/menu/menu.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/icon/icon.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/dropdown/dropdown.js"></script>-->
-    <script src="scripts.js" defer="defer"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/dropdown/dropdown.js"></script>
+    <script src="scripts.js"></script>
 </head>
-<style>
-#loading {
-    background: url('spinner.gif') no-repeat center center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9999999;
-}
-</style>
 
 <body>
-    <div id="loading"></div>
 
-<div class="box">
+<div class="box" style="max-width: 55%; margin: 0 auto; margin-top: 50px">
   <img src="40.gif" alt="logo">
   PowurAI Demo
  <div>
 
       
 
-                  <sl-card id="output-card" style="min-width: 480; max-width: 1080;">
+                  <sl-card id="output-card" style="min-width: 240; max-width: 700;">
                   <div slot="header">
                        <div>
                           <sl-select hoist="" id="location" label="Location" style="display:none"></sl-select>
