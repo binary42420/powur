@@ -824,6 +824,7 @@ async function initApp() {
     initElements()
     initLocation()
     initSamples()
+
     
     let overlay = document.getElementById('overlay');
 
