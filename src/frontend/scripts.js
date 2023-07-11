@@ -144,7 +144,7 @@ async function getLocations() {
 }
 
 async function getProcessors() {
-    const url = `/api/processors/us`
+    const url = `/api/processors/${gParams.apiLocation}`
     return jsonFromApi(url)
 }
 
