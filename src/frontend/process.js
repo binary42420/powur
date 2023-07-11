@@ -2,7 +2,7 @@
 'use strict';
 
 function main(name) {
-  // [START documentai_v1_generated_DocumentProcessorService_ProcessDocument_async]
+[START documentai_v1_generated_DocumentProcessorService_ProcessDocument_async]
 
 
   const inlineDocument = {}
@@ -22,7 +22,7 @@ function main(name) {
    *  or
    *  `projects/steam-lock-391908/locations/us/processors/{processor}/processorVersions/{processorVersion}`
    */
-   const name = 'projects/1082660766732/locations/us/processors/99822554d3535de7'
+   const name = 'projects/steam-lock-391908/locations/us/processors/UTILITY_PARSER'
   /**
    *  Whether human review should be skipped for this request. Default to
    *  `false`.
