@@ -203,14 +203,14 @@ function addOptions(formData) {
         lines: checked('lines'),
         tokens: checked('tokens'),
         tables: checked('tables'),
-        barcodes: checked('barcodes'),
         fields: checked('fields'),
         entities: checked('entities'),
+        barcodes: checked('barcodes'),
+        format: checked_format(),
         animated: checked('animated'),
         cropped: checked('cropped'),
         confidence: checked('confidence'),
         normalized: checked('normalized'),
-        format: checked_format(),
     }
     formData.append('options_json', JSON.stringify(options))
 }
