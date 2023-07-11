@@ -60,6 +60,7 @@ class Options(NamedTuple):
     normalized: bool
     format: ImageFormat
 
+
     @classmethod
     def from_json(cls, json: str):
         """Create instance from frontend json."""
