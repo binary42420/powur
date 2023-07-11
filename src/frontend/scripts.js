@@ -529,7 +529,7 @@ function elementWithValue(value) {
 
 function elementWithValueIsSelected(value) {
     const element = elementWithValue(value)
-    return element.tagName === 'SL-OPTION'
+    return element.tagName === 'sl-option'
         ? element.parentElement.value.split().includes(value)
         : element.checked
 }
